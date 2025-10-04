@@ -3,53 +3,9 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  --red: #d2191f;
 }
 
 body {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
-  background: #fad1d1;
-  padding: 80px 0;
-
-  section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 1186px;
-    margin: 0 auto;
-    gap: 20px;
-    background: #f9e4e4;
-
-    /* borders */
-    border: 2px dashed var(--red);
-    padding: 24px 48px;
-
-    img:nth-child(1) {
-      width: 235px;
-      height: 315px;
-      border-radius: 70px;
-    }
-    h1 {
-      font-size: 64px;
-      color: var(--red);
-      text-align: center;
-      font-weight: 900;
-      -webkit-text-stroke: 2px #fff;
-    }
-
-    h2 {
-      font-size: 40px;
-      text-align: center;
-      font-weight: 900;
-      color: var(--red);
-    }
-    p {
-      font-size: 32px;
-      text-align: center;
-      font-weight: 900;
-      color: black;
-      text-align: justify;
-    }
-  }
 }
