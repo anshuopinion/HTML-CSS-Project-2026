@@ -1,95 +1,70 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   background-color: #0c0d0f;
-  color: #ffffff;
+  color: white;
 }
 
 main {
   .hero {
     width: 100%;
+  }
 
-    .hero-bg {
-      width: 100%;
-      object-fit: cover;
-    }
+  .hero-bg {
+    width: 100%;
+    object-fit: cover;
+  }
 
-    .hero-content {
-      h1 {
-        font-size: 72px;
-        font-weight: 400;
-        color: #ffffff;
-        text-align: center;
-      }
+  .hero-content {
+    h1 {
+      font-size: 72px;
+      position: relative;
+      top: -120px;
+      text-align: center;
+      margin-bottom: -120px;
     }
   }
 
   .container {
-    max-width: 903px;
-
+    max-width: 900px;
     margin: 0 auto;
+    position: relative;
 
-    .service-container {
-      display: flex;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .arrow {
+      width: 10px;
       position: relative;
-      flex-direction: column;
-      gap: 20px;
-      .service {
-        display: flex;
-        align-items: center;
-        gap: 32px;
+      left: 25%;
+    }
+    .arrow.reverse {
+      left: 75%;
+    }
 
-        .service-img {
-          max-width: 450px;
-          /* height: 280px; */
-          object-fit: cover;
-        }
+    .service {
+      display: flex;
 
-        .service-text {
-          max-width: 420px;
-          display: flex;
-          flex-direction: column;
-          gap: 16px;
-
-          h2 {
-            font-size: 32px;
-            font-weight: 400;
-            color: #ffffff;
-          }
-
-          .service-description {
-            display: flex;
-            flex-direction: column;
-            gap: 17px;
-
-            p {
-              font-size: 16px;
-              font-weight: 300;
-              color: #ffffff;
-            }
-          }
-        }
+      .service-img {
+        max-width: 450px;
       }
-      .arrow {
-        position: relative;
-        top: 0%;
-        left: 25%;
-        width: 10px;
-        z-index: 1;
-
-        object-fit: contain;
-      }
-      .arrow.reverse {
-        top: 0%;
-        left: 75%;
+      .service-text {
+        padding: 32px;
+        h2 {
+          font-size: 32px;
+          padding-bottom: 16px;
+        }
+        p {
+          font-size: 16px;
+        }
       }
     }
 
@@ -102,32 +77,28 @@ main {
 
       h2 {
         font-size: 40px;
-        font-weight: 400;
-        color: #ffffff;
       }
 
       .contact-container {
         display: flex;
-        gap: 19px;
+        gap: 20px;
 
         form {
-          width: 480px;
-
+          max-width: 480px;
+          width: 100%;
           .form-field {
+            width: 100%;
             padding: 12px 16px;
-
             input,
             textarea {
               width: 100%;
               padding: 15px;
               font-size: 16px;
-              font-weight: 400;
+              line-height: 1.5em;
               color: #61758a;
-              background-color: #ffffff;
               border: 1px solid #dbe0e5;
-              border-radius: 8px;
               outline: none;
-              font-family: "Inter", sans-serif;
+              border-radius: 8px;
 
               &::placeholder {
                 color: #61758a;
@@ -137,7 +108,6 @@ main {
                 border-color: #1273d4;
               }
             }
-
             textarea {
               min-height: 120px;
               resize: vertical;
@@ -146,19 +116,17 @@ main {
 
           .form-submit {
             padding: 12px 16px;
-
             button {
-              padding: 0 16px;
-              height: 40px;
+              padding: 10px 16px;
               background-color: #1273d4;
-              color: #ffffff;
+              color: white;
               font-size: 14px;
               font-weight: 700;
               line-height: 1.5em;
               border: none;
               border-radius: 8px;
               cursor: pointer;
-              transition: opacity 0.2s;
+              transition: 0.2s;
 
               &:hover {
                 opacity: 0.9;
@@ -166,12 +134,11 @@ main {
             }
           }
         }
-
         img {
-          width: 404px;
-          height: 374px;
-          object-fit: cover;
+          width: 400px;
+          height: 375px;
           border-radius: 48px;
+          object-fit: cover;
         }
       }
     }
