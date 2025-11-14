@@ -1,133 +1,126 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
+}
 
-  main {
-    position: relative;
-    height: 100vh;
+main {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+
+  .image_container {
+    height: 100%;
     width: 100%;
-
-    .image_container {
+    position: absolute;
+    img {
       height: 100%;
       width: 100%;
-      overflow: hidden;
+      object-fit: cover;
+    }
+  }
+
+  .content {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+    .burger {
       position: absolute;
-      img {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
+      top: 20%;
+      left: 12%;
+    }
+    .tomato-1 {
+      position: absolute;
+      top: 60%;
+      left: 10%;
+    }
+    .tomato-2 {
+      position: absolute;
+      top: 35%;
+      right: 15%;
+    }
+    .pizza {
+      position: absolute;
+      top: 45%;
+      right: 10%;
+    }
+    .momo {
+      position: absolute;
+      top: 6%;
+      right: 15%;
+    }
+    .leaf {
+      position: absolute;
+      top: 12%;
+      left: 28%;
+    }
+
+    .text-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 60px;
+      h1 {
+        font-size: 64px;
+        line-height: 60px;
+        margin-bottom: 40px;
+        text-align: center;
+        color: #ca0306;
+      }
+      p {
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: bold;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 450px;
       }
     }
 
-    .content {
+    .info-section {
       display: flex;
-      height: 100%;
-      width: 100%;
+      margin-top: 120px;
       justify-content: center;
       align-items: center;
-      .burger {
-        position: absolute;
-        top: 20%;
-        left: 12%;
-        right: 0%;
-      }
-      .tomato-1 {
-        position: absolute;
-        top: 60%;
-        left: 10%;
-        right: 0%;
-      }
-      .tomato-2 {
-        position: absolute;
-        top: 35%;
-        right: 15%;
-        transform: rotate(45deg);
-      }
-      .pizza {
-        position: absolute;
-        top: 45%;
-        right: 10%;
-      }
-      .momo {
-        position: absolute;
-        top: 6%;
-        right: 15%;
-      }
-      .leaf {
-        position: absolute;
-        top: 12%;
-        left: 28%;
-        right: 0%;
-      }
+      background-color: rgba(255, 255, 255, 0.95);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+      gap: 16px;
+      padding: 15px;
+      border-radius: 15px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
 
-      .text-content {
+      .info-item {
         display: flex;
-        flex-direction: column;
-        text-align: center;
-        margin-bottom: 60px;
-
-        h1 {
-          font-size: 64px;
-          line-height: 60px;
-          margin-bottom: 40px;
-          color: #ca0306;
-        }
-        p {
-          font-size: 24px;
-          max-width: 450px;
-          font-weight: bold;
-          text-align: center;
-          margin: 0 auto;
-        }
-      }
-
-      .info-section {
-        margin-top: 120px;
-        display: flex;
-        justify-content: center;
         align-items: center;
-        gap: 16px;
-        background: rgba(255, 255, 255, 0.95);
-        padding: 15px;
-        border-radius: 15px;
-        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(10px);
-        border: 1px solid rgba(255, 255, 255, 0.2);
+        gap: 12px;
 
-        .info-item {
+        .info-icon {
+          height: 50px;
+          width: 50px;
+          object-fit: contain;
+        }
+
+        .info-text {
           display: flex;
-          align-items: center;
-          gap: 12px;
-
-          .info-icon {
-            width: 50px;
-            height: 50px;
-            object-fit: contain;
+          flex-direction: column;
+          .info-number {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ca0306;
           }
-
-          .info-text {
-            display: flex;
-            flex-direction: column;
-            text-align: left;
-
-            .info-number {
-              font-size: 24px;
-              font-weight: bold;
-              color: #ca0306;
-            }
-
-            .info-label {
-              font-size: 16px;
-              color: black;
-              font-weight: 500;
-            }
+          .info-label {
+            font-size: 16px;
+            color: black;
+            font-weight: 500;
           }
         }
       }
