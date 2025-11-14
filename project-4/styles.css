@@ -1,9 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -13,21 +12,19 @@ body {
 }
 
 main {
-  display: flex;
-  gap: 24px;
   padding: 20px;
+  display: flex;
   max-width: 1512px;
-  height: 100vh;
   margin: 0 auto;
+  height: 100vh;
 
   .sidebar {
     width: 300px;
-    background-color: #ffffff;
+    background: white;
     border-radius: 20px;
     padding: 16px;
     display: flex;
     flex-direction: column;
-    position: relative;
 
     .sidebar-top {
       display: flex;
@@ -39,13 +36,12 @@ main {
         justify-content: center;
         gap: 8px;
         background-color: #a300e4;
-        color: #ffffff;
+        color: white;
         border: none;
         border-radius: 3px;
         padding: 4px 8px;
         font-size: 12px;
         cursor: pointer;
-        width: fit-content;
         margin-bottom: 4px;
         img {
           width: 16px;
@@ -68,58 +64,45 @@ main {
 
     hr {
       border: none;
-      border-top: 1px solid rgba(0, 0, 0, 0.3);
+      border-top: 1px solid rgba(1, 1, 1, 0.3);
       margin-bottom: 16px;
     }
+
     .chat-history {
-      display: flex;
-      flex-direction: column;
       overflow-y: auto;
       margin-top: 8px;
       .chat-item {
         display: flex;
-        align-items: center;
         gap: 8px;
+        align-items: center;
         padding: 8px 12px;
         cursor: pointer;
-        transition: background-color 0.2s;
-
+        transition: backround-color 0.2s;
         &:hover {
           background-color: rgba(0, 0, 0, 0.05);
         }
-
         img {
           width: 24px;
           height: 24px;
         }
-
         span {
           font-size: 12px;
           font-weight: 400;
-          color: #000000;
+          color: black;
         }
       }
     }
   }
 
   .chat-container {
-    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    position: relative;
+    max-width: 912px;
+    padding-top: 55px;
+    margin: 0 auto;
 
     .messages {
-      flex: 1;
-      overflow-y: auto;
-      padding: 20px 120px;
-
-      p {
-        font-size: 20px;
-        font-weight: 500;
-        color: #000000;
-      }
-
       .user-message {
         display: flex;
         align-items: center;
@@ -137,66 +120,58 @@ main {
         margin-left: 56px;
         p {
           font-size: 16px;
-          font-weight: 700;
-          color: #000000;
-          margin-bottom: 10px;
+          font-weight: bold;
+          color: black;
+          margin-bottom: 1px;
         }
-
         ol {
           margin-left: 20px;
           font-size: 16px;
-          font-weight: 400;
           line-height: 1.5;
-          color: #000000;
+          color: black;
         }
       }
     }
-  }
 
-  .input-container {
-    position: relative;
-    display: flex;
-    align-items: start;
-    background-color: #ffffff;
-    border-radius: 32px;
-    padding: 0;
-    min-height: 190px;
-    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
-
-    input {
-      flex: 1;
-      border: none;
-      outline: none;
-      padding: 32px 40px;
-      font-size: 20px;
-      background: transparent;
-
-      &::placeholder {
-        color: #000000;
-      }
-    }
-
-    button {
-      position: absolute;
-      bottom: 20px;
-      right: 20px;
-      height: 50px;
-      width: 50px;
-      background-color: #ff0000;
-      border: none;
-      border-radius: 32px;
-      cursor: pointer;
+    .input-container {
+      position: relative;
       display: flex;
       align-items: center;
-      justify-content: center;
+      background-color: white;
+      border-radius: 32px;
+      padding: 0;
+      min-height: 190px;
+      box-shadow: 0px 0px 4px 0px rgba(1, 1, 1, 0.25);
 
-      img {
-        width: 24px;
-        height: 24px;
+      input {
+        flex: 1;
+        border: none;
+        padding: 32px 40px;
+        font-size: 20px;
+        background: transparent;
+        &::placeholder {
+          color: black;
+        }
       }
 
-      &:hover {
-        opacity: 0.9;
+      button {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        height: 50px;
+        width: 50px;
+        background: red;
+        border: none;
+        border-radius: 32px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          width: 24px;
+          height: 24px;
+        }
       }
     }
   }
