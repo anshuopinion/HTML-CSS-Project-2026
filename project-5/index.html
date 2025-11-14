@@ -19,23 +19,24 @@
 
         <form>
           <div class="form-field">
-            <label>Name</label>
-            <input type="text" placeholder="Your  Name" />
+            <label for="name">Name</label>
+            <input id="name" type="text" placeholder="Your Name" />
           </div>
-
           <div class="form-field">
-            <label>Email</label>
-            <input type="email" placeholder="Your  Email" />
+            <label for="email">Email</label>
+            <input id="email" type="text" placeholder="Your Email" />
           </div>
-
           <div class="form-field">
-            <label>Subject</label>
-            <input type="text" placeholder="Subject" />
+            <label for="subject">Subject</label>
+            <input id="subject" type="text" placeholder="Your Subject" />
           </div>
-
           <div class="form-field">
-            <label>Message</label>
-            <textarea></textarea>
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              type="text"
+              placeholder="Your Message"
+            ></textarea>
           </div>
 
           <div class="form-submit">
@@ -43,28 +44,22 @@
           </div>
         </form>
       </section>
-
       <section class="contact-info">
         <div class="info-content">
-          <div class="info-section">
-            <h2>Our Location</h2>
-          </div>
-
+          <h2>Our Location</h2>
           <div class="info-item">
             <p>123 Main Street, Anytown, CA 91234</p>
           </div>
-
           <div class="info-item">
             <p>Phone: (555) 123-4567</p>
           </div>
-
           <div class="info-item">
             <p>Email: contact@dosomecoding.com</p>
           </div>
         </div>
 
         <div class="map-container">
-          <img src="./images/map.png" alt="Location Map" />
+          <img src="./images/map.png" alt="Map" />
         </div>
       </section>
     </main>
