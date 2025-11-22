@@ -45,3 +45,66 @@ section {
     color: black;
   }
 }
+
+@media (width <= 768px) {
+  /* for phone smartphones */
+  body {
+    padding: 0px 0;
+  }
+
+  section {
+    padding: 16px 20px;
+    img {
+      width: 100%;
+    }
+    .avatar {
+      width: 200px;
+    }
+    .blood-art {
+      width: 260px;
+    }
+    h1 {
+      font-size: 32px;
+      -webkit-text-stroke: 0.5px white;
+    }
+    h2 {
+      font-size: 24px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (769px <= width <= 1279px) {
+  /* Laptops, landscape tablets, small desktops */
+  body {
+    padding: 0px 0;
+  }
+
+  section {
+    padding: 24px 32px;
+    img {
+      width: 100%;
+    }
+    .avatar {
+      width: 200px;
+    }
+    .blood-art {
+      width: 260px;
+    }
+    h1 {
+      font-size: 40px;
+      -webkit-text-stroke: 0.5px white;
+    }
+    h2 {
+      font-size: 28px;
+    }
+    p {
+      font-size: 20px;
+    }
+  }
+}
+@media (width >= 1280px) {
+  /* Larger desktops & monitors */
+}
