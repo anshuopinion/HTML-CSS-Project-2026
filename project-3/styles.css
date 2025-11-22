@@ -129,3 +129,135 @@ main {
     }
   }
 }
+
+@media (0 <= width <= 1279px) {
+  main {
+    padding-top: 20px;
+    gap: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    .images_section {
+      display: flex;
+      gap: 16px;
+      aside {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        img {
+          width: 8vw;
+        }
+      }
+
+      .image_container {
+        width: 100%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    .content {
+      h1 {
+        font-size: 28px;
+      }
+
+      h2 {
+        font-size: 16px;
+      }
+
+      .content_header {
+        .green-text {
+          font-size: 20px;
+        }
+      }
+      .variants_section {
+        display: flex;
+        gap: 4px;
+        img {
+          width: 10vw;
+        }
+      }
+      .price_section {
+        gap: 8px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+
+        h2 {
+          font-size: 16px;
+        }
+
+        p {
+          font-size: 16px;
+        }
+      }
+
+      .size_section {
+        .size_header {
+          display: flex;
+          justify-content: space-between;
+          h4 {
+            font-size: 12px;
+            margin-bottom: 20px;
+            margin-top: 32px;
+          }
+        }
+
+        .sizes {
+          display: grid;
+          gap: 6px;
+          margin-bottom: 20px;
+          .size {
+            padding: 8px 12px;
+            font-weight: 600;
+            font-size: 16px;
+          }
+        }
+      }
+
+      .button_container {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        button {
+          padding: 16px;
+          border-radius: 50px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+@media (width <= 768px) {
+  /* Smaller smartphones */
+
+  main {
+    padding-top: 20px;
+    gap: 8px;
+    flex-direction: column;
+
+    .images_section {
+      display: flex;
+      gap: 8px;
+      aside {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        img {
+          width: 12vw;
+        }
+      }
+    }
+    .content {
+      .variants_section {
+        display: flex;
+        gap: 4px;
+        img {
+          width: 16vw;
+        }
+      }
+    }
+  }
+}
