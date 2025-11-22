@@ -33,37 +33,40 @@ main {
     justify-content: center;
     align-items: center;
 
-    .burger {
-      position: absolute;
-      top: 20%;
-      left: 12%;
-    }
-    .tomato-1 {
-      position: absolute;
-      top: 60%;
-      left: 10%;
-    }
-    .tomato-2 {
-      position: absolute;
-      top: 35%;
-      right: 15%;
-    }
-    .pizza {
-      position: absolute;
-      top: 45%;
-      right: 10%;
-    }
-    .momo {
-      position: absolute;
-      top: 6%;
-      right: 15%;
-    }
-    .leaf {
-      position: absolute;
-      top: 12%;
-      left: 28%;
-    }
+    .center-content {
+      position: relative;
 
+      .burger {
+        position: absolute;
+        top: 0%;
+        left: -40%;
+      }
+      .tomato-1 {
+        position: absolute;
+        top: 61%;
+        left: -45%;
+      }
+      .tomato-2 {
+        position: absolute;
+        top: 14%;
+        right: -18%;
+      }
+      .pizza {
+        position: absolute;
+        top: 24%;
+        right: -33%;
+      }
+      .momo {
+        position: absolute;
+        top: -44%;
+        right: -24%;
+      }
+      .leaf {
+        position: absolute;
+        top: -23%;
+        left: 0%;
+      }
+    }
     .text-content {
       display: flex;
       flex-direction: column;
@@ -126,4 +129,145 @@ main {
       }
     }
   }
+}
+@media (width <= 768px) {
+  /* Smaller smartphones */
+
+  main {
+    .content {
+      .center-content {
+        position: relative;
+
+        .burger {
+          top: 0%;
+          left: -24%;
+          transform: scale(0.4);
+        }
+        .tomato-1 {
+          top: 61%;
+          left: -2%;
+          transform: scale(0.5);
+        }
+        .tomato-2 {
+          top: 18%;
+          right: 2%;
+          transform: scale(0.5);
+        }
+        .pizza {
+          top: 14%;
+          right: -21%;
+          transform: scale(0.4);
+        }
+        .momo {
+          top: -41%;
+
+          right: -17%;
+          transform: scale(0.4);
+        }
+        .leaf {
+          top: -13%;
+          left: 12%;
+          transform: scale(0.5);
+        }
+      }
+      .text-content {
+        margin-bottom: 20px;
+        h1 {
+          font-size: 28px;
+          line-height: 32px;
+          margin-bottom: 12px;
+        }
+        p {
+          font-size: 16px;
+          line-height: 20px;
+          max-width: 200px;
+        }
+      }
+
+      .info-section {
+        margin-top: 60px;
+
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+        gap: 8px;
+        padding: 12px;
+        border-radius: 8px;
+
+        .info-item {
+          gap: 6px;
+
+          .info-icon {
+            height: 32px;
+            width: 32px;
+          }
+
+          .info-text {
+            .info-number {
+              font-size: 16px;
+            }
+            .info-label {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (769px <= width <= 1279px) {
+  /* Laptops, landscape tablets, small desktops */
+
+  main {
+    .content {
+      .center-content {
+        position: relative;
+
+        .burger {
+          top: 0%;
+          left: -27%;
+          transform: scale(0.8);
+        }
+        .tomato-1 {
+          top: 61%;
+          left: -15%;
+          transform: scale(0.8);
+        }
+        .tomato-2 {
+          top: 14%;
+          right: -5%;
+          transform: scale(0.8);
+        }
+        .pizza {
+          top: 14%;
+          right: -21%;
+          transform: scale(0.8);
+        }
+        .momo {
+          top: -41%;
+          right: -11%;
+          transform: scale(0.8);
+        }
+        .leaf {
+          top: -13%;
+          left: 12%;
+          transform: scale(0.8);
+        }
+      }
+      .text-content {
+        margin-bottom: 20px;
+        h1 {
+          font-size: 40px;
+          line-height: 44px;
+          margin-bottom: 20px;
+        }
+        p {
+          font-size: 20px;
+          line-height: 24px;
+          max-width: 380px;
+        }
+      }
+    }
+  }
+}
+@media (width >= 1280px) {
+  /* Larger desktops & monitors */
 }
