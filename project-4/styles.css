@@ -176,3 +176,40 @@ main {
     }
   }
 }
+
+@media (0 <= width <= 1279px) {
+  /* Laptops, landscape tablets, small desktops */
+
+  main {
+    display: flex;
+    flex-direction: column;
+    .sidebar {
+      width: 100%;
+      .chat-history {
+        height: 200px;
+      }
+    }
+    .chat-container {
+      flex-grow: 1;
+      padding-top: 20px;
+      .messages {
+        height: 53vh;
+        overflow-y: auto;
+      }
+    }
+  }
+}
+
+@media (width <= 768px) {
+  main {
+    .chat-container {
+      .messages {
+        height: 40vh;
+      }
+    }
+  }
+}
+
+@media (width >= 1280px) {
+  /* Larger desktops & monitors */
+}
