@@ -114,3 +114,44 @@ main {
     }
   }
 }
+
+@media (width <= 768px) {
+  main {
+    nav {
+      padding-top: 16px;
+      padding-left: 8px;
+      padding-right: 8px;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .hero {
+      padding: 8px;
+      flex-direction: column;
+      img {
+        border-radius: 24px;
+      }
+      .hero-text {
+        p {
+          text-align: start;
+          margin-bottom: 20px;
+        }
+      }
+    }
+    .blog-cards {
+      margin-top: 80px;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 16px;
+      place-items: center;
+      padding: 8px;
+      .card {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (769px <= width <= 1279px) {
+}
+
+@media (width >= 1280px) {
+}
