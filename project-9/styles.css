@@ -50,13 +50,17 @@ header {
   box-shadow: 5px 5px 5px rbga(0, 0, 0, 0.5);
 
   nav {
+    .menu {
+      display: none;
+    }
+
     max-width: var(--max-width);
     margin: 0 auto;
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
+    padding: 20px;
     h1 {
       font-size: 32px;
       font-weight: 600;
@@ -242,4 +246,98 @@ footer {
     text-align: center;
     padding: 20px;
   }
+}
+
+@media (width <= 768px) {
+  header {
+    nav {
+      ul {
+        display: none;
+      }
+      .menu {
+        display: block;
+      }
+    }
+  }
+
+  .hero {
+    color: white;
+    height: 60vh;
+
+    h2 {
+      font-size: 40px;
+    }
+    h3 {
+      font-size: 20px;
+    }
+    p {
+      max-width: 80%;
+    }
+  }
+
+  .about-music {
+    padding-top: 380px;
+    p {
+      max-width: 80%;
+    }
+    figure {
+      img {
+        max-width: 90%;
+        height: auto;
+      }
+    }
+  }
+
+  .video {
+    height: 50vh;
+
+    p {
+      margin-top: 40px;
+      font-size: 14px;
+      max-width: 80%;
+    }
+  }
+
+  .gift {
+    padding: 32px 0;
+    flex-direction: column;
+    figure {
+      img {
+        width: 100%;
+      }
+    }
+    hr {
+      width: 100%;
+    }
+    div {
+      padding: 20px;
+    }
+  }
+  footer {
+    section {
+      padding: 50px 20px;
+      display: flex;
+      flex-direction: column;
+
+      nav {
+        min-width: 320px;
+      }
+    }
+  }
+}
+
+@media (769px <= width <= 1279px) {
+  footer {
+    section {
+      padding: 50px 20px;
+      display: flex;
+
+      nav {
+        min-width: 120px;
+      }
+    }
+  }
+}
+
+@media (width >= 1280px) {
 }
