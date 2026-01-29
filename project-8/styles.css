@@ -182,3 +182,59 @@ header {
     }
   }
 }
+
+@media (width <= 768px) {
+  header {
+    .youtube-logo {
+      width: 80px;
+    }
+    .header-center {
+      width: 100%;
+      padding-left: 20px;
+      .search-container {
+        width: 100%;
+
+        input {
+          width: 100%;
+          height: 28px;
+          min-width: 100%;
+        }
+        button {
+          height: 28px;
+        }
+      }
+      .mic-btn {
+        width: 32px;
+        height: 32px;
+      }
+    }
+    .header-right {
+      display: none;
+    }
+  }
+  .main-container {
+    main {
+      .categories {
+        overflow-x: auto;
+        width: calc(100vw - 68px);
+      }
+    }
+  }
+}
+
+@media (769px <= width <= 1279px) {
+  header {
+    .header-center {
+      .search-container {
+        input {
+          width: 100%;
+          height: 38px;
+          min-width: 250px;
+        }
+      }
+    }
+  }
+}
+
+@media (width >= 1280px) {
+}
