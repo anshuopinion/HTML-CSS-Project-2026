@@ -134,3 +134,64 @@ body {
     }
   }
 }
+/* Laptop */
+@media (max-width: 1024px) {
+  .text-content h1 {
+    font-size: 48px;
+    line-height: 52px;
+  }
+
+  .text-content p {
+    font-size: 20px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .burger, .tomato-1, .tomato-2,
+  .pizza, .momo, .leaf {
+    display: none;
+  }
+
+  .text-content h1 {
+    font-size: 36px;
+    line-height: 42px;
+    margin-bottom: 20px;
+  }
+
+  .text-content p {
+    font-size: 16px;
+  }
+
+  .info-section {
+    flex-direction: column;
+    margin-top: 40px;
+    gap: 10px;
+    padding: 10px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .text-content h1 {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .text-content p {
+    font-size: 14px;
+  }
+
+  .info-section {
+    margin-top: 20px;
+    padding: 8px;
+  }
+
+  .info-item .info-number {
+    font-size: 18px;
+  }
+
+  .info-item .info-label {
+    font-size: 13px;
+  }
+}
